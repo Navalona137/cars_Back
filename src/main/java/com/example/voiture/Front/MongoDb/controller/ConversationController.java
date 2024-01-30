@@ -17,7 +17,6 @@ import com.example.voiture.Front.MongoDb.modele.*;
 import com.example.voiture.Front.MongoDb.repository.*;
 
 @RestController
-@CrossOrigin
 @RequestMapping("/Conversation")
 public class ConversationController {
 
