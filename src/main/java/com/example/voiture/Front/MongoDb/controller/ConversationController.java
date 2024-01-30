@@ -16,13 +16,13 @@ import com.example.voiture.Front.MongoDb.modele.*;
 import com.example.voiture.Front.MongoDb.repository.*;
 
 @RestController
-@RequestMapping("/Conversation")
+
 public class ConversationController {
 
     @Autowired
     public ConversationRepository service;
 
-    @GetMapping("/list")
+    @GetMapping("/Conversation")
     public List<Conversation> getAll() {
         System.out.println(service.findAll());
         return service.findAll();
