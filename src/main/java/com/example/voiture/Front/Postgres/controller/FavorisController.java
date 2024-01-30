@@ -19,8 +19,7 @@ public class FavorisController {
     @Autowired
     private FavorisRepository service;
 
-    @GetMapping("/Favoris/list")
-    @CrossOrigin(origins = "http://localhost:3000")
+    @GetMapping("/Favorislist")
     public List<Favoris> getAll() {
         return service.findAll();
     }
