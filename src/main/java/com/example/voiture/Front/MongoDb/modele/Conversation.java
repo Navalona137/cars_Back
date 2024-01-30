@@ -77,13 +77,6 @@ public class Conversation {
         this.receiver = receiver;
     }
 
-    public Conversation(int sender, int receiver, String texte, String ajout) {
-        this.sender = sender;
-        this.receiver = receiver;
-        this.texte = texte;
-        this.ajout = this.ajout(ajout);
-    }
-
     public Conversation(String id, int sender, int receiver, String texte, Date ajout) {
         this.id = id;
         this.sender = sender;
