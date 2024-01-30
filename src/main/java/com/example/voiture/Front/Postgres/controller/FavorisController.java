@@ -9,17 +9,19 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.example.voiture.Front.Postgres.modele.Favoris;
 import com.example.voiture.Front.Postgres.repository.FavorisRepository;
 
 @RestController
+@RequestMapping("/Favoris")
 public class FavorisController {
 
     @Autowired
     private FavorisRepository service;
 
-    @GetMapping("/Favorislist")
+    @GetMapping("/list")
     public List<Favoris> getAll() {
         return service.findAll();
     }
