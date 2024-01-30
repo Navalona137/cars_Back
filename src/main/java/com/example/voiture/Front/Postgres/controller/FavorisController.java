@@ -20,6 +20,7 @@ public class FavorisController {
     private FavorisRepository service;
 
     @GetMapping("/Favoris/list")
+    @CrossOrigin(origins = "http://localhost:3000")
     public List<Favoris> getAll() {
         return service.findAll();
     }
