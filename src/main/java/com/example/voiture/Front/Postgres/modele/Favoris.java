@@ -1,22 +1,18 @@
 package com.example.voiture.Front.Postgres.modele;
 
-import java.sql.Date;
-import java.util.Set;
-
 import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-
 
 @Entity
 public class Favoris {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    int id;
-    int idvoiture;
-    int iduser;
+    private int id;
+    private int idvoiture;
+    private int iduser;
 
     public Favoris() {
     }

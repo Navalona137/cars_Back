@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 import com.example.voiture.Front.Postgres.modele.Favoris;
 
 @Repository
-public interface FavorisRepository extends JpaRepository<Favoris, Long> {
+public interface FavorisRepository extends JpaRepository<Favoris, Integer> {
     // Vous pouvez ajouter des méthodes spécifiques de requête ici si nécessaire
     List<Favoris> findByIduser(int id);
     List<Favoris> findByIdvoiture(int id);
