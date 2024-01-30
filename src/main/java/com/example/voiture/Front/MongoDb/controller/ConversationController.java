@@ -22,7 +22,7 @@ public class ConversationController {
     @Autowired
     public ConversationRepository service;
 
-    @GetMapping("/Conversation")
+    @GetMapping("/conversation")
     public List<Conversation> getAll() {
         System.out.println(service.findAll());
         return service.findAll();
